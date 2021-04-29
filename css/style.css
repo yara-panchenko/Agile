@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: rgb(4,227,15);
+    background: linear-gradient(90deg, rgba(4,227,15,1) 0%, rgba(17,17,207,1) 53%, rgba(255,0,22,1) 100%);
+    /*background-color: blanchedalmond;*/
+}
+
+header, footer, nav {
+    height: 10%;
+    background-color: wheat;
+}
+
+main {
+    height: 70%;
+    margin: 0 auto;
+}
+
+header > h1, footer > p {
+    text-align: center;
+    color: black;
+}
+
+header {
+    letter-spacing: 1rem;
+    padding-top: 1rem;
+    color: snow;
+}
+
+nav {
+    font-size: x-large;
+    padding-left: 6%;
+}
+
+ol { 
+    margin: 0 30%;
+    padding: 1rem;
+}
+
+ol li {
+    line-height: 2rem;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    margin-left: 20%;
+}
+
+table {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+table tr td h2 {
+    text-align: center;
+}
+
+table tr td {
+    border: 0.05rem double black;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: white;
+}
+
+table tr td span {
+    margin-left: 30%;
+    display: inline-block;
+}
+
+table tr td a {
+    font-size: x-large;
+    letter-spacing: 1rem;
+    text-decoration: none;
+    padding-right: 2rem;
+}
+
+.tooltip {
+position: relative;
+display: inline-block;
+border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+visibility: hidden;
+width: 120px;
+background-color: #555;
+color: #fff;
+text-align: center;
+padding: 5px 0;
+border-radius: 6px;
+
+position: absolute;
+z-index: 1;
+bottom: 125%;
+left: 100%;
+margin-left: -60px;
+
+opacity: 0;
+transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+content: "";
+position: absolute;
+top: 100%;
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+visibility: visible;
+opacity: 1;
+} 
+
+.firstmaintranslatedtext {display: none;}
+.first:hover firstmaintext {display: none;}
+.first:hover firstmaintranslatedtext {display: inline;}
